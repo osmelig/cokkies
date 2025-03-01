@@ -1,0 +1,91 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #fff5e6;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.tiempo {
+    color: #666;
+    font-style: italic;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.ingredientes, .instrucciones {
+    margin-bottom: 30px;
+}
+
+.contenedor-imagen img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.rating {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.estrellas {
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.estrella {
+    color: #ffd700;
+    transition: color 0.3s;
+}
+
+.estrella:hover,
+.estrella.seleccionada {
+    color: #ffa500;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 25px;
+    background: #ff9966;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #ff7733;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #666;
+}
+
+@media (min-width: 768px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    
+    .contenedor-imagen {
+        grid-column: span 2;
+    }
+}
+
